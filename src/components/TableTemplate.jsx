@@ -95,7 +95,7 @@ export default function TableTemplate({ data: rows, removeItem, dataShow }) {
                                     <IconButton onClick={() => navigate(`/${pathname.split("/")[1]}/edit${pathname.split("/")[1]}/${row.id}`)} color="primary" aria-label="edit">
                                         <EditIcon />
                                     </IconButton>
-                                    <IconButton onClick={() => removeItem({ name: row.name })} color="error" aria-label="delete">
+                                    <IconButton onClick={() => removeItem({ id: row.id })} color="error" aria-label="delete">
                                         <DeleteIcon />
                                     </IconButton>
                                 </TableCell>
